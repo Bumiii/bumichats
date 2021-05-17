@@ -5,7 +5,7 @@ module.exports = (Discord, client, message) =>{
     if (message.author.bot || message.channel.type === 'dm') return;
 
     if(message.channel.name === "bumichats") {
-        fetch(`https://api.monkedev.com/fun/chat?msg=${message.content}&uid=${message.author.id}`)
+        fetch(`https://api.monkedev.com/fun/chat?msg=${message.content}&uid=${message.author.id}&key=lmxWAyly2nsfNC7UWbPLpB7ts`)
         .then(response => response.json())
         .then(data => {
             message.channel.send(data.response)
