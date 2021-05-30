@@ -16,7 +16,7 @@ client.on('ready', () => {
     client.user.setPresence({
         status: 'available',     //sets status button to green   
         activity: {
-            name: `'!bc setup' to set me up`,    //This is the custom text  
+            name: `!bc setup | ${client.guilds.cache.size} servers`,    //This is the custom text  
             type: 'PLAYING'     //this is the type (duh). 'watching' would also be an option  
         }
         
